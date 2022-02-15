@@ -99,6 +99,17 @@ library(robustbase)
 help(mammals, package = MASS)
 help(Animals2, package = robustbase)
 
+#b
+dim(mammals)
+h1 <- head(mammals)
+t1 <- tail(mammals)
+str(mammals)
+
+dim(Animals2)
+h2 <- head(Animals2)
+t2 <- tail(Animals2)
+str(Animals2)
+
 
 
 
