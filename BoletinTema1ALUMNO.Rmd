@@ -178,7 +178,11 @@ length(libReturn$results[,1])
 str(cabbages)
 # El conjunto de datos cabbages tiene 60 registros y 4 variables, que son de tipo Factor, Factor, numérico y entero
 
-
+#b
+sum(is.na(cabbages$Cult)*1)
+sum(is.na(cabbages$Date)*1)
+sum(is.na(cabbages$HeadWt)*1)
+sum(is.na(cabbages$VitC)*1)
 
 
 
