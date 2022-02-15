@@ -176,13 +176,26 @@ length(libReturn$results[,1])
 ```{r}
 #a
 str(cabbages)
-# El conjunto de datos cabbages tiene 60 registros y 4 variables, que son de tipo Factor, Factor, numérico y entero
+# El conjunto de datos cabbages tiene 60 registros y 4 variables, dos de tipo Factor, una de tipo numérico y una de tipo entero
 
 #b
 sum(is.na(cabbages$Cult)*1)
 sum(is.na(cabbages$Date)*1)
 sum(is.na(cabbages$HeadWt)*1)
 sum(is.na(cabbages$VitC)*1)
+
+#c
+str(Chile)
+#El conjunto de datos Chile tiene 2700 registros y 8 variables, cuatro de tipo Factor, tres de tipo entero y una de tipo numérico
+
+sum(is.na(Chile$region)*1)
+sum(is.na(Chile$population)*1)
+sum(is.na(Chile$sex)*1)
+sum(is.na(Chile$age)*1)
+sum(is.na(Chile$education)*1)
+sum(is.na(Chile$income)*1)
+sum(is.na(Chile$statusquo)*1)
+sum(is.na(Chile$vote)*1)
 
 
 
