@@ -226,7 +226,7 @@ hist(cabbages[cabbages$Cult == 'c52',4], main = 'Frecuencia de vitamina C en la 
 #Diagrama de dispersión global.
 plot(whiteside$Temp, whiteside$Gas)
 #Diagrama de dispersión etiquetando según un factor.
-plot(whiteside$Temp, whiteside$Gas, pch=c(6,16)[whiteside\$Insul])
+plot(whiteside$Temp, whiteside$Gas, pch=c(6,16)[whiteside$Insul])
 legend(x="topright",legend=c("Insul = Before","Insul = After"), pch=c(6,16))
 # Planteamos 2 modelos lineales, uno para los datos de cada factor
 Model1 <- lm(Gas ~ Temp, data = whiteside, subset = which(Insul == "Before"))
@@ -255,6 +255,13 @@ a.  Utiliza un procedimiento análogo para determinar si se aprecia una relació
 b.  Repite el apartado anterior, pero obteniendo un modelo para cada una de las dos variedades de calabaza, **Cult**. Ver[Parámetros básicos plot](https://www.statmethods.net/advgraphs/parameters.html).
 
 ```{r}
+#a
+#Diagrama de dispersión global.
+plot(cabbages$HeadWt, cabbages$VitC)
+Model <- lm(VitC ~ HeadWt, data = cabbages)
+abline(Model)
+# Los datos son muy dispersos por lo que no se aprecia una relación lineal
+
 
 
 
