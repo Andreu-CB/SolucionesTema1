@@ -197,32 +197,9 @@ sum(is.na(Chile$income)*1)
 sum(is.na(Chile$statusquo)*1)
 sum(is.na(Chile$vote)*1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#d
+summary(cabbages)
+summary(Chile)
 ```
 
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
