@@ -92,7 +92,12 @@ b.  Usa las funciones **dim, head, tail, str** para una primera visión de los c
 c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
+library(MASS)
+library(robustbase)
 
+#a
+help(mammals, package = MASS)
+help(Animals2, package = robustbase)
 
 
 
